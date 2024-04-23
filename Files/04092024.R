@@ -43,7 +43,7 @@ file.copy(paste0(ssc_location,"/", "inv_bal.csv"),
 
 
 # Inventory with Lot Report v.2
-file.copy(paste0(ssc_location,"/", "Inventory with Lot Report v.2.xlsx"), 
+file.copy(paste0(ssc_location,"/", "Inventory.xlsx"), 
           paste0(destination, "/", "Inventory with Lot Report v.2.xlsx"), 
           overwrite = TRUE)
 

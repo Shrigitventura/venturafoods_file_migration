@@ -44,7 +44,12 @@ file.copy(paste0(ssc_location,"/", "inv_bal.csv"),
 
 # Inventory with Lot Report v.2
 file.copy(paste0(ssc_location,"/", "Inventory.xlsx"), 
-          paste0(destination, "/", "Inventory with Lot Report v.2.xlsx"), 
+          paste0("S:/Supply Chain Projects/Data Source (SCE)/Inventory/Inventory with Lot Report v.2 - 2024.04.09.xlsx"), 
+          overwrite = TRUE)
+
+# JDE 25,55
+file.copy(paste0(ssc_location,"/", "JDE 25,55.xlsx"), 
+          paste0("S:/Supply Chain Projects/Data Source (SCE)/Inventory/JDE Inventory Lot Detail - 2024.04.09.xlsx"), 
           overwrite = TRUE)
 
 

@@ -1,12 +1,20 @@
 
 dir.create("S:/Supply Chain Projects/Data Source (SCE)/Report ingredients/Stan/04232024", showWarnings = FALSE)
 
+######################################################################################################################
+
 ssc_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/Safety Stock Compliance/Weekly Run Files/2024/04.23.2024"
 bom_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/BoM version 2/Weekly Run/2024/04.23.2024"
+dnrr_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/DNRR Automation/DNRR Weekly Report/2024/04.23.2024"
+iqr_rm_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/IQR Automation/RM/Weekly Report run/2024/04.23.2024"
+iqr_fg_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/IQR Automation/FG/weekly run data/2024/04.23.2024"
+
 destination <- "S:/Supply Chain Projects/Data Source (SCE)/Report ingredients/Stan/04232024"
 exception_report_destination <- "S:/Supply Chain Projects/Data Source (SCE)/JDE Exception report extract/2024"
 
+#####################################################################################################################
 ############################################## Safety Stock Compliance ##############################################
+#####################################################################################################################
 
 # Location 430
 file.copy(paste0(ssc_location,"/", "430.xlsx"), 
@@ -68,7 +76,7 @@ file.copy(paste0(ssc_location,"/", "US and CAN OO BT where status _ J.xlsx"),
           overwrite = TRUE)
 
 
-######################################################################################
+###################################################################################### Result
 
 
 
@@ -88,8 +96,9 @@ file.copy(paste0(ssc_location,"/", "Weekly Safety Stock Compliance Report v4 rol
 
 
 
-
-############################################## BoM ##############################################
+##################################################################################################
+############################################## BoM ###############################################
+##################################################################################################
 
 # Canada Open Orders
 file.copy(paste0(bom_location,"/", "Canada Open Orders.xlsx"), 
@@ -112,10 +121,55 @@ file.copy(paste0(bom_location,"/", "jde_us.xlsx"),
           paste0(destination, "/", "jde_us.xlsx"), 
           overwrite = TRUE)
 
-########################################################
+######################################################## Result 
 
 
 # Bill of Material
 file.copy(paste0(bom_location,"/", "Bill of Material_042324.xlsx"), 
           paste0(destination, "/", "Bill of Material_042324.xlsx"), 
           overwrite = TRUE)
+
+
+
+##################################################################################################
+############################################## DNRR ##############################################
+##################################################################################################
+
+# Sales and Open Orders Cube - Date Range - 3 months
+file.copy(paste0(dnrr_location,"/", "Sales and Open Orders Cube - Date Range - 3 months.xlsx"), 
+          paste0(destination, "/", "Sales and Open Orders Cube - Date Range - 3 months 04.23.2024.xlsx"), 
+          overwrite = TRUE)
+
+
+######################################################## Result 
+
+# DNRR Tool ver.3
+file.copy(paste0(dnrr_location,"/", "DNRR Tool ver.3 - 04.23.2024.xlsx"), 
+          paste0(destination, "/", "DNRR Tool ver.3 - 04.23.2024.xlsx"), 
+          overwrite = TRUE)
+
+
+##################################################################################################
+############################################## IQR RM ############################################
+##################################################################################################
+
+# Result
+file.copy(paste0(iqr_rm_location,"/", "iqr_rm_rstudio_042324.xlsx"), 
+          paste0(destination, "/", "iqr_rm_rstudio_042324.xlsx"), 
+          overwrite = TRUE)
+
+##################################################################################################
+############################################## IQR FG ############################################
+##################################################################################################
+
+# Open Order
+file.copy(paste0(iqr_fg_location,"/", "Open Order.xlsx"), 
+          paste0(destination, "/", "Open Order.xlsx"), 
+          overwrite = TRUE)
+
+# Result
+file.copy(paste0(iqr_fg_location,"/", "iqr_fg_rstudio_04232024.xlsx"), 
+          paste0(destination, "/", "iqr_fg_rstudio_04232024.xlsx"), 
+          overwrite = TRUE)
+
+

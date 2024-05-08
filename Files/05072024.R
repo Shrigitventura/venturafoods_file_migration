@@ -87,6 +87,11 @@ file.copy(paste0(ssc_location,"/", "US and CAN OO BT where status _ J.xlsx"),
           paste0(destination, "/", "/US and CAN OO BT where status _ J.xlsx"), 
           overwrite = TRUE)
 
+# WO MSTR
+file.copy(paste0(ssc_location,"/", "WO.xlsx"), 
+          paste0(destination, "/", "WO_MSTR.xlsx"), 
+          overwrite = TRUE)
+
 
 ###################################################################################### Result
 

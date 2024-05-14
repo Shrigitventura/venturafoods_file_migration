@@ -92,6 +92,11 @@ file.copy(paste0(ssc_location,"/", "WO.xlsx"),
           paste0(destination, "/", "WO_MSTR.xlsx"), 
           overwrite = TRUE)
 
+# PO JDE
+file.copy(paste0(ssc_location,"/", "po.xlsx"), 
+          paste0(destination, "/", "PO_JDE.xlsx"), 
+          overwrite = TRUE)
+
 
 ###################################################################################### Result
 

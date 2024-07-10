@@ -104,7 +104,7 @@ file.copy(paste0(ssc_location,"/", "SS Metrics 0709.xlsx"),
 
 
 # Weekly Safety Stock Compliance Report
-file.copy(paste0(ssc_location,"/", "Weekly Safety Stock Compliance Report v4 rolling 53 weeks - 07.09.2024.xlsb"), 
+file.copy(paste0(ssc_location,"/", "Weekly Safety Stock Compliance Report v4 rolling 53 weeks - 07.09.2024_2.xlsb"), 
           paste0(destination, "/", "Weekly Safety Stock Compliance Report v4 rolling 53 weeks - 07.09.2024.xlsb"), 
           overwrite = TRUE)
 

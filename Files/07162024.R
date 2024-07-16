@@ -142,8 +142,8 @@ file.copy(paste0(bom_location,"/", "jde_us.xlsx"),
 
 
 # Bill of Material
-file.copy(paste0(bom_location,"/", "Bill of Material_070924.xlsx"), 
-          paste0(destination, "/", "Bill of Material_070924.xlsx"), 
+file.copy(paste0(bom_location,"/", "Bill of Material_071624.xlsx"), 
+          paste0(destination, "/", "Bill of Material_071624.xlsx"), 
           overwrite = TRUE)
 
 
@@ -171,8 +171,8 @@ file.copy(paste0(dnrr_location,"/", "DNRR Tool ver.3 - 07.16.2024.xlsx"),
 ##################################################################################################
 
 # Result
-file.copy(paste0(iqr_rm_location,"/", "iqr_rm_rstudio_070924.xlsx"), 
-          paste0(destination, "/", "iqr_rm_rstudio_070924.xlsx"), 
+file.copy(paste0(iqr_rm_location,"/", "iqr_rm_rstudio_071624.xlsx"), 
+          paste0(destination, "/", "iqr_rm_rstudio_071624.xlsx"), 
           overwrite = TRUE)
 
 ##################################################################################################

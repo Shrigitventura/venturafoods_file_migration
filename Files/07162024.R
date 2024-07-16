@@ -88,7 +88,7 @@ file.copy(paste0(ssc_location,"/", "WO.xlsx"),
           overwrite = TRUE)
 
 # PO JDE
-file.copy(paste0(ssc_location,"/", "Copy of PO Reporting Tool - 07.09.24.xlsx"), 
+file.copy(paste0(ssc_location,"/", "Copy of PO Reporting Tool - 07.16.24.xlsx"), 
           paste0(destination, "/", "PO_JDE.xlsx"), 
           overwrite = TRUE)
 
@@ -104,7 +104,7 @@ file.copy(paste0(ssc_location,"/", "SS Metrics 0709.xlsx"),
 
 
 # Weekly Safety Stock Compliance Report
-file.copy(paste0(ssc_location,"/", "Weekly Safety Stock Compliance Report v4 rolling 53 weeks - 07.16.2024_2.xlsb"), 
+file.copy(paste0(ssc_location,"/", "Weekly Safety Stock Compliance Report v4 rolling 53 weeks - 07.16.2024.xlsb"), 
           paste0(destination, "/", "Weekly Safety Stock Compliance Report v4 rolling 53 weeks - 07.16.2024.xlsb"), 
           overwrite = TRUE)
 

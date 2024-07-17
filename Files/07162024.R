@@ -1,5 +1,5 @@
 
-dir.create("S:/Supply Chain Projects/Data Source (SCE)/Report ingredients/Stan/07092024", showWarnings = FALSE)
+dir.create("S:/Supply Chain Projects/Data Source (SCE)/Report ingredients/Stan/07162024", showWarnings = FALSE)
 dir.create("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/Safety Stock Compliance/Weekly Run Files/2024/07.16.2024", showWarnings = FALSE)
 dir.create("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/BoM version 2/Weekly Run/2024/07.16.2024", showWarnings = FALSE)
 dir.create("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/DNRR Automation/DNRR Weekly Report/2024/07.16.2024", showWarnings = FALSE)
@@ -14,7 +14,7 @@ dnrr_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Projec
 iqr_rm_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/IQR Automation/RM/Weekly Report run/2024/07.16.2024"
 iqr_fg_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/IQR Automation/FG/weekly run data/2024/07.16.2024"
 
-destination <- "S:/Supply Chain Projects/Data Source (SCE)/Report ingredients/Stan/07092024"
+destination <- "S:/Supply Chain Projects/Data Source (SCE)/Report ingredients/Stan/07162024"
 exception_report_destination <- "S:/Supply Chain Projects/Data Source (SCE)/JDE Exception report extract/2024"
 exception_report_destination_dnrr <- "S:/Supply Chain Projects/Data Source (SCE)/JDE DNRR Exception report extract/2024"
 
@@ -98,8 +98,8 @@ file.copy(paste0(ssc_location,"/", "Copy of PO Reporting Tool - 07.16.24.xlsx"),
 
 
 # SS Metrics
-file.copy(paste0(ssc_location,"/", "SS Metrics 0709.xlsx"), 
-          paste0(destination, "/", "SS Metrics 0709.xlsx"), 
+file.copy(paste0(ssc_location,"/", "SS Metrics 0716.xlsx"), 
+          paste0(destination, "/", "SS Metrics 0716.xlsx"), 
           overwrite = TRUE)
 
 
@@ -185,8 +185,8 @@ file.copy(paste0(iqr_fg_location,"/", "Open Order.xlsx"),
           overwrite = TRUE)
 
 # Result
-file.copy(paste0(iqr_fg_location,"/", "iqr_fg_rstudio_07092024.xlsx"), 
-          paste0(destination, "/", "iqr_fg_rstudio_07092024.xlsx"), 
+file.copy(paste0(iqr_fg_location,"/", "iqr_fg_rstudio_07162024.xlsx"), 
+          paste0(destination, "/", "iqr_fg_rstudio_07162024.xlsx"), 
           overwrite = TRUE)
 
 

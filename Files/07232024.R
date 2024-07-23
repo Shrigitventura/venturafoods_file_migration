@@ -43,12 +43,12 @@ file.copy(paste0(ssc_location,"/", "Completed SKU list - Linda.xlsx"),
 
 # exception report
 file.copy(paste0(ssc_location,"/", "exception report.xlsx"), 
-          paste0(exception_report_destination, "/", "exception report 2024.07.09.xlsx"), 
+          paste0(exception_report_destination, "/", "exception report 2024.07.23.xlsx"), 
           overwrite = TRUE)
 
 # exception report DNRR
 file.copy(paste0(ssc_location,"/", "exception report dnrr.xlsx"),
-          paste0(exception_report_destination_dnrr, "/", "exception report DOU 2024.07.09.xlsx"),
+          paste0(exception_report_destination_dnrr, "/", "exception report DOU 2024.07.23.xlsx"),
           overwrite = TRUE)
 
 
@@ -64,12 +64,12 @@ file.copy(paste0(ssc_location,"/", "inv_bal.csv"),
 
 # Inventory with Lot Report v.2
 file.copy(paste0(ssc_location,"/", "Inventory.xlsx"), 
-          paste0("S:/Supply Chain Projects/Data Source (SCE)/Inventory/Inventory with Lot Report v.2 - 2024.07.09.xlsx"), 
+          paste0("S:/Supply Chain Projects/Data Source (SCE)/Inventory/Inventory with Lot Report v.2 - 2024.07.23.xlsx"), 
           overwrite = TRUE)
 
 # JDE 25,55
 file.copy(paste0(ssc_location,"/", "JDE 25,55.xlsx"), 
-          paste0("S:/Supply Chain Projects/Data Source (SCE)/Inventory/JDE Inventory Lot Detail - 2024.07.09.xlsx"), 
+          paste0("S:/Supply Chain Projects/Data Source (SCE)/Inventory/JDE Inventory Lot Detail - 2024.07.23.xlsx"), 
           overwrite = TRUE)
 
 
@@ -98,8 +98,8 @@ file.copy(paste0(ssc_location,"/", "Copy of PO Reporting Tool - 07.23.24.xlsx"),
 
 
 # SS Metrics
-file.copy(paste0(ssc_location,"/", "SS Metrics 0716.xlsx"), 
-          paste0(destination, "/", "SS Metrics 0716.xlsx"), 
+file.copy(paste0(ssc_location,"/", "SS Metrics 0723.xlsx"), 
+          paste0(destination, "/", "SS Metrics 0723.xlsx"), 
           overwrite = TRUE)
 
 
@@ -142,8 +142,8 @@ file.copy(paste0(bom_location,"/", "jde_us.xlsx"),
 
 
 # Bill of Material
-file.copy(paste0(bom_location,"/", "Bill of Material_071624.xlsx"), 
-          paste0(destination, "/", "Bill of Material_071624.xlsx"), 
+file.copy(paste0(bom_location,"/", "Bill of Material_072324.xlsx"), 
+          paste0(destination, "/", "Bill of Material_072324.xlsx"), 
           overwrite = TRUE)
 
 
@@ -171,8 +171,8 @@ file.copy(paste0(dnrr_location,"/", "DNRR Tool ver.3 - 07.23.2024.xlsx"),
 ##################################################################################################
 
 # Result
-file.copy(paste0(iqr_rm_location,"/", "iqr_rm_rstudio_071624.xlsx"), 
-          paste0(destination, "/", "iqr_rm_rstudio_071624.xlsx"), 
+file.copy(paste0(iqr_rm_location,"/", "iqr_rm_rstudio_072324.xlsx"), 
+          paste0(destination, "/", "iqr_rm_rstudio_072324.xlsx"), 
           overwrite = TRUE)
 
 ##################################################################################################

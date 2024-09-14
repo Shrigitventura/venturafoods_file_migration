@@ -17,7 +17,7 @@ iqr_fg_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Proj
 destination <- "S:/Supply Chain Projects/Data Source (SCE)/Report ingredients/Stan/09122024"
 exception_report_destination <- "S:/Supply Chain Projects/Data Source (SCE)/JDE Exception report extract/2024"
 exception_report_destination_dnrr <- "S:/Supply Chain Projects/Data Source (SCE)/JDE DNRR Exception report extract/2024"
-
+monthly_consumption_destination <- "S:/Supply Chain Projects/Data Source (SCE)/Raw Material Monthly Consumption"
 
 #####################################################################################################################
 ############################################## Safety Stock Compliance ##############################################
@@ -173,6 +173,13 @@ file.copy(paste0(dnrr_location,"/", "DNRR Tool ver.3 - 09.12.2024.xlsx"),
 # Result
 file.copy(paste0(iqr_rm_location,"/", "iqr_rm_rstudio_091224.xlsx"), 
           paste0(destination, "/", "iqr_rm_rstudio_091224.xlsx"), 
+          overwrite = TRUE)
+
+
+# Raw consumption MSTR (Once a month)
+
+file.copy(paste0(iqr_rm_location,"/", "Raw Material Monthly Consumption.xlsx"), 
+          paste0(monthly_consumption_destination, "/", "Raw Material Monthly Consumption 2024-09.xlsx"), 
           overwrite = TRUE)
 
 ##################################################################################################

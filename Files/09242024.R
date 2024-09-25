@@ -54,11 +54,11 @@ file.copy(paste0(ssc_location,"/", "exception report dnrr.xlsx"),
 
 # Inv_bal
 file.copy(paste0(ssc_location,"/", "inv_bal.xlsx"), 
-          paste0(destination, "/", "inb_bal.xlsx"), 
+          paste0(destination, "/", "inv_bal.xlsx"), 
           overwrite = TRUE)
 
 file.copy(paste0(ssc_location,"/", "inv_bal.csv"), 
-          paste0(destination, "/", "inb_bal.csv"), 
+          paste0(destination, "/", "inv_bal.csv"), 
           overwrite = TRUE)
 
 

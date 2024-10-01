@@ -36,8 +36,8 @@ file.copy(paste0(ssc_location,"/", "BT open order and qty.xlsx"),
 
 
 # Completed SKU list
-file.copy(paste0(ssc_location,"/", "Completed SKU list - Linda.xlsx"), 
-          paste0(destination, "/", "Completed SKU list - Linda.xlsx"), 
+file.copy(paste0(ssc_location,"/", "Complete SKU list - Linda.xlsx"), 
+          paste0(destination, "/", "Complete SKU list - Linda.xlsx"), 
           overwrite = TRUE)
 
 

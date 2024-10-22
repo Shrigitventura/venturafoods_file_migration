@@ -1,19 +1,19 @@
-dir.create("S:/Supply Chain Projects/Data Source (SCE)/Report ingredients/Stan/10152024", showWarnings = FALSE)
-dir.create("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/Safety Stock Compliance/Weekly Run Files/2024/10.15.2024", showWarnings = FALSE)
-dir.create("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/BoM version 2/Weekly Run/2024/10.15.2024", showWarnings = FALSE)
-dir.create("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/DNRR Automation/DNRR Weekly Report/2024/10.15.2024", showWarnings = FALSE)
-dir.create("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/IQR Automation/RM/Weekly Report run/2024/10.15.2024", showWarnings = FALSE)
-dir.create("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/IQR Automation/FG/weekly run data/2024/10.15.2024", showWarnings = FALSE)
+dir.create("S:/Supply Chain Projects/Data Source (SCE)/Report ingredients/Stan/10222024", showWarnings = FALSE)
+dir.create("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/Safety Stock Compliance/Weekly Run Files/2024/10.22.2024", showWarnings = FALSE)
+dir.create("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/BoM version 2/Weekly Run/2024/10.22.2024", showWarnings = FALSE)
+dir.create("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/DNRR Automation/DNRR Weekly Report/2024/10.22.2024", showWarnings = FALSE)
+dir.create("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/IQR Automation/RM/Weekly Report run/2024/10.22.2024", showWarnings = FALSE)
+dir.create("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/IQR Automation/FG/weekly run data/2024/10.22.2024", showWarnings = FALSE)
 
 ######################################################################################################################
 
-ssc_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/Safety Stock Compliance/Weekly Run Files/2024/10.15.2024"
-bom_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/BoM version 2/Weekly Run/2024/10.15.2024"
-dnrr_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/DNRR Automation/DNRR Weekly Report/2024/10.15.2024"
-iqr_rm_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/IQR Automation/RM/Weekly Report run/2024/10.15.2024"
-iqr_fg_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/IQR Automation/FG/weekly run data/2024/10.15.2024"
+ssc_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/Safety Stock Compliance/Weekly Run Files/2024/10.22.2024"
+bom_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/BoM version 2/Weekly Run/2024/10.22.2024"
+dnrr_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/DNRR Automation/DNRR Weekly Report/2024/10.22.2024"
+iqr_rm_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/IQR Automation/RM/Weekly Report run/2024/10.22.2024"
+iqr_fg_location <- "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/IQR Automation/FG/weekly run data/2024/10.22.2024"
 
-destination <- "S:/Supply Chain Projects/Data Source (SCE)/Report ingredients/Stan/10152024"
+destination <- "S:/Supply Chain Projects/Data Source (SCE)/Report ingredients/Stan/10222024"
 exception_report_destination <- "S:/Supply Chain Projects/Data Source (SCE)/JDE Exception report extract/2024"
 exception_report_destination_dnrr <- "S:/Supply Chain Projects/Data Source (SCE)/JDE DNRR Exception report extract/2024"
 monthly_consumption_destination <- "S:/Supply Chain Projects/Data Source (SCE)/Raw Material Monthly Consumption"
@@ -42,12 +42,12 @@ file.copy(paste0(ssc_location,"/", "Complete SKU list - Linda.xlsx"),
 
 # exception report
 file.copy(paste0(ssc_location,"/", "exception report.xlsx"), 
-          paste0(exception_report_destination, "/", "exception report 2024.10.15.xlsx"), 
+          paste0(exception_report_destination, "/", "exception report 2024.10.22.xlsx"), 
           overwrite = TRUE)
 
 # exception report DNRR
 file.copy(paste0(ssc_location,"/", "exception report dnrr.xlsx"),
-          paste0(exception_report_destination_dnrr, "/", "exception report DOU 2024.10.15.xlsx"),
+          paste0(exception_report_destination_dnrr, "/", "exception report DOU 2024.10.22.xlsx"),
           overwrite = TRUE)
 
 
@@ -63,12 +63,12 @@ file.copy(paste0(ssc_location,"/", "inv_bal.csv"),
 
 # Inventory with Lot Report v.2
 file.copy(paste0(ssc_location,"/", "Inventory.xlsx"), 
-          paste0("S:/Supply Chain Projects/Data Source (SCE)/Inventory/Inventory with Lot Report v.2 - 2024.10.15.xlsx"), 
+          paste0("S:/Supply Chain Projects/Data Source (SCE)/Inventory/Inventory with Lot Report v.2 - 2024.10.22.xlsx"), 
           overwrite = TRUE)
 
 # JDE 25,55
 file.copy(paste0(ssc_location,"/", "JDE 25,55.xlsx"), 
-          paste0("S:/Supply Chain Projects/Data Source (SCE)/Inventory/JDE Inventory Lot Detail - 2024.10.15.xlsx"), 
+          paste0("S:/Supply Chain Projects/Data Source (SCE)/Inventory/JDE Inventory Lot Detail - 2024.10.22.xlsx"), 
           overwrite = TRUE)
 
 
@@ -87,7 +87,7 @@ file.copy(paste0(ssc_location,"/", "WO.xlsx"),
           overwrite = TRUE)
 
 # PO JDE
-file.copy(paste0(ssc_location,"/", "Copy of PO Reporting Tool - 10.15.24.xlsx"), 
+file.copy(paste0(ssc_location,"/", "Copy of PO Reporting Tool - 10.22.24.xlsx"), 
           paste0(destination, "/", "PO_JDE.xlsx"), 
           overwrite = TRUE)
 
@@ -102,14 +102,14 @@ file.copy(paste0(ssc_location,"/", "07 Item Cost Component Dataset (Daichi).xlsx
 
 
 # SS Metrics
-file.copy(paste0(ssc_location,"/", "SS Metrics 1015.xlsx"), 
-          paste0(destination, "/", "SS Metrics 1015.xlsx"), 
+file.copy(paste0(ssc_location,"/", "SS Metrics 1022.xlsx"), 
+          paste0(destination, "/", "SS Metrics 1022.xlsx"), 
           overwrite = TRUE)
 
 
 # Weekly Safety Stock Compliance Report
-file.copy(paste0(ssc_location,"/", "Weekly Safety Stock Compliance Report v4 rolling 53 weeks - 10.15.2024.xlsb"), 
-          paste0(destination, "/", "Weekly Safety Stock Compliance Report v4 rolling 53 weeks - 10.15.2024.xlsb"), 
+file.copy(paste0(ssc_location,"/", "Weekly Safety Stock Compliance Report v4 rolling 53 weeks - 10.22.2024.xlsb"), 
+          paste0(destination, "/", "Weekly Safety Stock Compliance Report v4 rolling 53 weeks - 10.22.2024.xlsb"), 
           overwrite = TRUE)
 
 
@@ -146,8 +146,8 @@ file.copy(paste0(bom_location,"/", "jde_us.xlsx"),
 
 
 # Bill of Material
-file.copy(paste0(bom_location,"/", "Bill of Material_101524.xlsx"), 
-          paste0(destination, "/", "Bill of Material_101524.xlsx"), 
+file.copy(paste0(bom_location,"/", "Bill of Material_102224.xlsx"), 
+          paste0(destination, "/", "Bill of Material_102224.xlsx"), 
           overwrite = TRUE)
 
 
@@ -158,15 +158,15 @@ file.copy(paste0(bom_location,"/", "Bill of Material_101524.xlsx"),
 
 # Sales and Open Orders Cube - Date Range - 3 months
 file.copy(paste0(dnrr_location,"/", "Sales and Open Orders Cube - Date Range - 3 months.xlsx"), 
-          paste0(destination, "/", "Sales and Open Orders Cube - Date Range - 3 months 10.15.2024.xlsx"), 
+          paste0(destination, "/", "Sales and Open Orders Cube - Date Range - 3 months 10.22.2024.xlsx"), 
           overwrite = TRUE)
 
 
 ######################################################## Result 
 
 # DNRR Tool ver.3
-file.copy(paste0(dnrr_location,"/", "DNRR Tool ver.3 - 10.15.2024.xlsx"), 
-          paste0(destination, "/", "DNRR Tool ver.3 - 10.15.2024.xlsx"), 
+file.copy(paste0(dnrr_location,"/", "DNRR Tool ver.3 - 10.22.2024.xlsx"), 
+          paste0(destination, "/", "DNRR Tool ver.3 - 10.22.2024.xlsx"), 
           overwrite = TRUE)
 
 
@@ -175,8 +175,8 @@ file.copy(paste0(dnrr_location,"/", "DNRR Tool ver.3 - 10.15.2024.xlsx"),
 ##################################################################################################
 
 # Result
-file.copy(paste0(iqr_rm_location,"/", "iqr_rm_rstudio_101524.xlsx"), 
-          paste0(destination, "/", "iqr_rm_rstudio_101524.xlsx"), 
+file.copy(paste0(iqr_rm_location,"/", "iqr_rm_rstudio_102224.xlsx"), 
+          paste0(destination, "/", "iqr_rm_rstudio_102224.xlsx"), 
           overwrite = TRUE)
 
 
@@ -196,8 +196,8 @@ file.copy(paste0(iqr_fg_location,"/", "Open Order.xlsx"),
           overwrite = TRUE)
 
 # Result
-file.copy(paste0(iqr_fg_location,"/", "iqr_fg_rstudio_10152024.xlsx"), 
-          paste0(destination, "/", "iqr_fg_rstudio_10152024.xlsx"), 
+file.copy(paste0(iqr_fg_location,"/", "iqr_fg_rstudio_10222024.xlsx"), 
+          paste0(destination, "/", "iqr_fg_rstudio_10222024.xlsx"), 
           overwrite = TRUE)
 
 

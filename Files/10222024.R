@@ -103,6 +103,11 @@ file.copy(paste0(ssc_location,"/", "07 Item Cost Component Dataset (Daichi).xlsx
           paste0(destination, "/", "Unit_Cost.xlsx"), 
           overwrite = TRUE)
 
+# Open order for next 38 days
+file.copy(paste0(ssc_location,"/", "Open Work Order for 28 days.xlsx"), 
+          paste0(destination, "/", "Open Work Order for 28 days.xlsx"), 
+          overwrite = TRUE)
+
 
 ###################################################################################### Result
 

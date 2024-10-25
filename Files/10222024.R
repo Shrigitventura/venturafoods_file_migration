@@ -91,6 +91,13 @@ file.copy(paste0(ssc_location,"/", "Copy of PO Reporting Tool - 10.22.24.xlsx"),
           paste0(destination, "/", "PO_JDE.xlsx"), 
           overwrite = TRUE)
 
+
+# Ordered and shipped history
+file.copy(paste0(ssc_location,"/", "Ordered and Shipped History - Month.xlsx"), 
+          paste0(destination, "/", "Ordered and Shipped History - Month - 10.22.2024.xlsx"), 
+          overwrite = TRUE)
+
+
 # Unit cost
 file.copy(paste0(ssc_location,"/", "07 Item Cost Component Dataset (Daichi).xlsx"), 
           paste0(destination, "/", "Unit_Cost.xlsx"), 

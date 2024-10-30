@@ -92,9 +92,14 @@ file.copy(paste0(ssc_location,"/", "Copy of PO Reporting Tool - 10.29.24.xlsx"),
           overwrite = TRUE)
 
 
-# Ordered and shipped history
-file.copy(paste0(ssc_location,"/", "Ordered and Shipped History - Month.xlsx"), 
-          paste0(destination, "/", "Ordered and Shipped History - Month - 10.29.2024.xlsx"), 
+# Ordered and shipped history - ordered
+file.copy(paste0(ssc_location,"/", "ordered.xlsx"), 
+          paste0(destination, "/", "Ordered and Shipped History (Ordered) - Month - 10.29.2024.xlsx"), 
+          overwrite = TRUE)
+
+# Ordered and shipped history - shipped
+file.copy(paste0(ssc_location,"/", "shipped.xlsx"), 
+          paste0(destination, "/", "Ordered and Shipped History (shipped) - Month - 10.29.2024.xlsx"), 
           overwrite = TRUE)
 
 
@@ -103,7 +108,7 @@ file.copy(paste0(ssc_location,"/", "07 Item Cost Component Dataset (Daichi).xlsx
           paste0(destination, "/", "Unit_Cost.xlsx"), 
           overwrite = TRUE)
 
-# Open order for next 38 days
+# Open order for next 28 days
 file.copy(paste0(ssc_location,"/", "Open Work Order for 28 days.xlsx"), 
           paste0(destination, "/", "Open Work Order for 28 days.xlsx"), 
           overwrite = TRUE)

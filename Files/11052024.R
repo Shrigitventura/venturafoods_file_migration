@@ -159,8 +159,8 @@ file.copy(paste0(bom_location,"/", "jde_us.xlsx"),
 
 
 # Bill of Material
-file.copy(paste0(bom_location,"/", "Bill of Material_110524.xlsx"), 
-          paste0(destination, "/", "Bill of Material_110524.xlsx"), 
+file.copy(paste0(bom_location,"/", "Bill of Material_11052024.xlsx"), 
+          paste0(destination, "/", "Bill of Material_11052024.xlsx"), 
           overwrite = TRUE)
 
 

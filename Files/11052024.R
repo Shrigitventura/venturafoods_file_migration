@@ -196,7 +196,7 @@ file.copy(paste0(iqr_rm_location,"/", "iqr_rm_rstudio_110524.xlsx"),
 # Raw consumption MSTR (Once a month)
 
 file.copy(paste0(iqr_rm_location,"/", "Raw Material Monthly Consumption.xlsx"), 
-          paste0(monthly_consumption_destination, "/", "Raw Material Monthly Consumption 2024-10.xlsx"), 
+          paste0(monthly_consumption_destination, "/", "Raw Material Monthly Consumption 2024-11.xlsx"), 
           overwrite = TRUE)
 
 ##################################################################################################

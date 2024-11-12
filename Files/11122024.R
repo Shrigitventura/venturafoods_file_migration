@@ -89,14 +89,11 @@ file.copy(paste0(ssc_location,"/", "Copy of PO Reporting Tool - 11.12.24.xlsx"),
 
 
 # Ordered and shipped history - ordered
-file.copy(paste0(ssc_location,"/", "ordered.xlsx"), 
+file.copy(paste0(ssc_location,"/", "Ordered and Shipped History - Month.xlsx"), 
           paste0(destination, "/", "Ordered and Shipped History (Ordered) - Month - 11.12.2024.xlsx"), 
           overwrite = TRUE)
 
-# Ordered and shipped history - shipped
-file.copy(paste0(ssc_location,"/", "shipped.xlsx"), 
-          paste0(destination, "/", "Ordered and Shipped History (shipped) - Month - 11.12.2024.xlsx"), 
-          overwrite = TRUE)
+
 
 
 # Unit cost

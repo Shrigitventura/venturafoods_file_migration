@@ -83,7 +83,7 @@ file.copy(paste0(ssc_location,"/", "US and CAN OO BT where status _ J.xlsx"),
 
 
 # PO JDE
-file.copy(paste0(ssc_location,"/", "Copy of PO Reporting Tool - 12.03.24.xlsx"), 
+file.copy(paste0(ssc_location,"/", "PO Reporting Tool - 12.03.24.xlsx"), 
           paste0(destination, "/", "PO_JDE.xlsx"), 
           overwrite = TRUE)
 

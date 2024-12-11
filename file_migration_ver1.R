@@ -107,6 +107,13 @@ file.copy(paste0(ssc_location,"/", "Open Work Order for 28 days.xlsx"),
           overwrite = TRUE)
 
 
+# PO1
+file.copy(paste0(ssc_location,"/", "PO1.xlsx"), 
+          paste0(destination, "/", "PO1.xlsx"), 
+          overwrite = TRUE)
+
+
+
 ###################################################################################### Result
 
 

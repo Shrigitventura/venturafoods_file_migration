@@ -192,8 +192,8 @@ file.copy(paste0(dnrr_location,"/", "DNRR Tool ver.3 - 12.10.2024.xlsx"),
 ##################################################################################################
 
 # Result
-file.copy(paste0(iqr_rm_location,"/", "iqr_rm_rstudio_12102024_2.xlsx"), 
-          paste0(destination, "/", "iqr_rm_rstudio_12102024_2.xlsx"), 
+file.copy(paste0(iqr_rm_location,"/", "iqr_rm_rstudio_12102024.xlsx"), 
+          paste0(destination, "/", "iqr_rm_rstudio_12102024.xlsx"), 
           overwrite = TRUE)
 
 

@@ -207,10 +207,7 @@ file.copy(paste0(iqr_rm_location,"/", "Raw Material Monthly Consumption.xlsx"),
 ############################################## IQR FG ############################################
 ##################################################################################################
 
-# Open Order
-file.copy(paste0(iqr_fg_location,"/", "Open Order.xlsx"), 
-          paste0(destination, "/", "Open Order.xlsx"), 
-          overwrite = TRUE)
+
 
 # Result
 file.copy(paste0(iqr_fg_location,"/", "iqr_fg_rstudio_12172024.xlsx"), 

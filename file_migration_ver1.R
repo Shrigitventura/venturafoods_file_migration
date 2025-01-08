@@ -119,8 +119,8 @@ file.copy(paste0(ssc_location,"/", "PO1.xlsx"),
 
 
 # SS Metrics
-file.copy(paste0(ssc_location,"/", "SS Metrics 1231.xlsx"), 
-          paste0(destination, "/", "SS Metrics 1231.xlsx"), 
+file.copy(paste0(ssc_location,"/", "SS Metrics 0107.xlsx"), 
+          paste0(destination, "/", "SS Metrics 0107.xlsx"), 
           overwrite = TRUE)
 
 

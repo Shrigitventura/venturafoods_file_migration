@@ -42,12 +42,12 @@ file.copy(paste0(ssc_location,"/", "Complete SKU list - Linda.xlsx"),
 
 # exception report
 file.copy(paste0(ssc_location,"/", "exception report.xlsx"), 
-          paste0(exception_report_destination, "/", "exception report 2025.01.14.xlsx"), 
+          paste0(exception_report_destination, "/", "exception report 2025.01.21.xlsx"), 
           overwrite = TRUE)
 
 # exception report DNRR
 file.copy(paste0(ssc_location,"/", "exception report dnrr.xlsx"),
-          paste0(exception_report_destination_dnrr, "/", "exception report DOU 2025.01.14.xlsx"),
+          paste0(exception_report_destination_dnrr, "/", "exception report DOU 2025.01.21.xlsx"),
           overwrite = TRUE)
 
 
@@ -63,12 +63,12 @@ file.copy(paste0(ssc_location,"/", "inv_bal.csv"),
 
 # Inventory with Lot Report v.2
 file.copy(paste0(ssc_location,"/", "Inventory.xlsx"), 
-          paste0("S:/Supply Chain Projects/Data Source (SCE)/Inventory/Inventory with Lot Report v.2 - 2025.01.14.xlsx"), 
+          paste0("S:/Supply Chain Projects/Data Source (SCE)/Inventory/Inventory with Lot Report v.2 - 2025.01.21.xlsx"), 
           overwrite = TRUE)
 
 # JDE 25,55
 file.copy(paste0(ssc_location,"/", "JDE 25,55.xlsx"), 
-          paste0("S:/Supply Chain Projects/Data Source (SCE)/Inventory/JDE Inventory Lot Detail - 2025.01.14.xlsx"), 
+          paste0("S:/Supply Chain Projects/Data Source (SCE)/Inventory/JDE Inventory Lot Detail - 2025.01.21.xlsx"), 
           overwrite = TRUE)
 
 
@@ -119,8 +119,8 @@ file.copy(paste0(ssc_location,"/", "PO1.xlsx"),
 
 
 # SS Metrics
-file.copy(paste0(ssc_location,"/", "SS Metrics 0114.xlsx"), 
-          paste0(destination, "/", "SS Metrics 0114.xlsx"), 
+file.copy(paste0(ssc_location,"/", "SS Metrics 0121.xlsx"), 
+          paste0(destination, "/", "SS Metrics 0121.xlsx"), 
           overwrite = TRUE)
 
 
